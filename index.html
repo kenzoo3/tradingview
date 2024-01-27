@@ -1,4 +1,53 @@
-<!-- TradingView Widget BEGIN -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2列のレイアウト</title>
+<style>
+  .container {
+    display: flex;
+  }
+  .column {
+    padding: 20px;
+    overflow-y: auto; /* 垂直方向のスクロールを有効にする */
+  }
+  .left-column {
+    flex: 1;
+    width: 10%;
+    background-color: #f0f0f0;
+    max-height: 100vh; /* 画面の高さいっぱいに設定 */
+  }
+  .right-column {
+    flex: 9;
+    width: 90%;
+    background-color: #e0e0e0;
+  }
+
+  /* レスポンシブデザイン */
+  @media only screen and (max-width: 600px) {
+    .container {
+      flex-direction: column;
+    }
+    .left-column, .right-column {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="column left-column">
+    <h2>左側の列</h2>
+    <p>ここに左側のコンテンツを追加します。</p>
+    <!-- 長いテキストを追加してスクロールを確認 -->
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut velit ipsum. Integer eget lectus et urna iaculis tincidunt. Duis mollis ligula non nisl molestie, sed fringilla nisi semper. Suspendisse potenti. Fusce id tempus neque. Vivamus faucibus tristique nunc, vel fermentum arcu viverra sit amet. Donec non nunc sit amet nibh vestibulum luctus. Proin condimentum mi a felis vestibulum, vitae vestibulum nulla mattis.</p>
+  </div>
+  <div class="column right-column">
+    <h2>右側の列</h2>
+    <p>ここに右側のコンテンツを追加します。</p>
+    <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" style="height:100%;width:100%">
   <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
   <div class="tradingview-widget-copyright"><a href="https://jp.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">TradingViewですべてのマーケットを追跡</span></a></div>
@@ -99,3 +148,8 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
+  </div>
+</div>
+
+</body>
+</html>
