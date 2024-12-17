@@ -19,6 +19,29 @@
     background-color: #e0e0e0;
   }
 
+
+
+.tradingview-widget-container {
+    width: 100%;
+    position: relative; /* 子要素の絶対位置を基準にする */
+  }
+  .tradingview-widget-container::before {
+    content: '';
+    display: block;
+    padding-top: 33.33%; /* 縦幅を横幅の33%にする */
+  }
+  .tradingview-widget-container__widget {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+
+  
   /* レスポンシブデザイン */
   @media only screen and (max-width: 600px) {
     .container {
