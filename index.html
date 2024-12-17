@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>2列のレイアウト</title>
 <style>
+
+<!--
   .container {
     display: flex;
   }
@@ -23,7 +25,24 @@
     width: 50%;
     background-color: #e0e0e0;
   }
+-->
 
+
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2つの列を1:1の比率で指定 */
+  }
+  .left-column, .right-column {
+    padding: 20px;
+  }
+  .left-column {
+    background-color: #f0f0f0;
+  }
+  .right-column {
+    background-color: #e0e0e0;
+  }
+  
   /* レスポンシブデザイン */
   @media only screen and (max-width: 600px) {
     .container {
