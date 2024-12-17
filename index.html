@@ -15,9 +15,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2つの列を1:1の比率で指定 */
   }
-  .left-column, .right-column {
-    padding: 20px;
-  }
   .left-column {
     background-color: #f0f0f0;
   }
@@ -42,7 +39,7 @@
 <div class="container">
   <div class="column left-column">
     
-    <p>EA EU AU</p>
+    
     <!-- 長いテキストを追加してスクロールを確認 文字を入れたいならこれか<p> </p> <h2>left title</h2>　-->
     
 
@@ -55,8 +52,8 @@
   
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
-  "width": "200",
-  "height": "100",
+  "width": "300",
+  "height": "150",
   "symbol": "OANDA:EURAUD",
   "interval": "1",
   "timezone": "Etc/UTC",
@@ -65,6 +62,7 @@
   "locale": "en",
   "gridColor": "rgba(101, 101, 101, 0.06)",
   "hide_top_toolbar": true,
+  "hide_legend": true,
   "allow_symbol_change": false,
   "save_image": false,
   "calendar": false,
@@ -87,8 +85,8 @@
   
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
-  "width": "200",
-  "height": "100",
+  "width": "300",
+  "height": "150",
   "symbol": "OANDA:EURUSD",
   "interval": "1",
   "timezone": "Etc/UTC",
@@ -97,6 +95,7 @@
   "locale": "en",
   "gridColor": "rgba(101, 101, 101, 0.06)",
   "hide_top_toolbar": true,
+  "hide_legend": true,
   "allow_symbol_change": false,
   "save_image": false,
   "calendar": false,
@@ -117,8 +116,8 @@
   
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
-  "width": "200",
-  "height": "100",
+  "width": "300",
+  "height": "150",
   "symbol": "OANDA:AUDUSD",
   "interval": "1",
   "timezone": "Etc/UTC",
@@ -127,6 +126,106 @@
   "locale": "en",
   "gridColor": "rgba(101, 101, 101, 0.06)",
   "hide_top_toolbar": true,
+  "hide_legend": true,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "calendar": false,
+  "studies": [
+    "STD;MA%Ribbon"
+  ],
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+
+    
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "300",
+  "height": "150",
+  "symbol": "OANDA:EURJPY",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "hide_top_toolbar": true,
+  "hide_legend": true,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "calendar": false,
+  "studies": [
+    "STD;MA%Ribbon"
+  ],
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "300",
+  "height": "150",
+  "symbol": "OANDA:AUDJPY",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "hide_top_toolbar": true,
+  "hide_legend": true,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "calendar": false,
+  "studies": [
+    "STD;MA%Ribbon"
+  ],
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "300",
+  "height": "150",
+  "symbol": "OANDA:USDJPY",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "hide_top_toolbar": true,
+  "hide_legend": true,
   "allow_symbol_change": false,
   "save_image": false,
   "calendar": false,
@@ -147,97 +246,6 @@
 
     
 
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "200",
-  "height": "100",
-  "symbol": "OANDA:EURJPY",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "200",
-  "height": "100",
-  "symbol": "OANDA:AUDJPY",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "200",
-  "height": "100",
-  "symbol": "OANDA:USDJPY",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
 
     
   </div>
