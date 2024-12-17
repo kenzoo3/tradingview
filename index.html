@@ -14,13 +14,13 @@
   }
   .left-column {
     flex: 1;
-    width: 10%;
+    width: 3%;
     background-color: #f0f0f0;
     max-height: 100vh; /* 画面の高さいっぱいに設定 */
   }
   .right-column {
     flex: 9;
-    width: 90%;
+    width: 97%;
     background-color: #e0e0e0;
   }
 
@@ -47,24 +47,26 @@
   <div class="column right-column">
     <h2>title</h2>
     <p>見出し</p>
+
     <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:48%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://jp.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">TradingViewですべてのマーケットを追跡</span></a></div>
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "autosize": true,
-  "symbol": "OANDA:EURJPY",
-  "interval": "5",
+  "symbol": "OANDA:EURAUD",
+  "interval": "1",
   "timezone": "Etc/UTC",
   "theme": "dark",
   "style": "1",
-  "locale": "ja",
-  "enable_publishing": false,
-  "hide_top_toolbar": true,
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "allow_symbol_change": true,
   "save_image": false,
+  "calendar": false,
   "studies": [
-    "STD;EMA"
+    "STD;MA%Ribbon"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -73,24 +75,28 @@
 </div>
 <!-- TradingView Widget END -->
 
-<!-- TradingView Widget BEGIN -->
+
+
+
+    <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:48%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://jp.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">TradingViewですべてのマーケットを追跡</span></a></div>
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "autosize": true,
-  "symbol": "OANDA:GBPJPY",
-  "interval": "5",
+  "symbol": "OANDA:EURUSD",
+  "interval": "1",
   "timezone": "Etc/UTC",
   "theme": "dark",
   "style": "1",
-  "locale": "ja",
-  "enable_publishing": false,
-  "hide_top_toolbar": true,
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "allow_symbol_change": true,
   "save_image": false,
+  "calendar": false,
   "studies": [
-    "STD;EMA"
+    "STD;MA%Ribbon"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -98,24 +104,86 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
-<!-- TradingView Widget BEGIN -->
+
+
+
+    <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:48%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://jp.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">TradingViewですべてのマーケットを追跡</span></a></div>
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "autosize": true,
+  "symbol": "OANDA:AUDUSD",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "allow_symbol_change": true,
+  "save_image": false,
+  "calendar": false,
+  "studies": [
+    "STD;MA%Ribbon"
+  ],
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "autosize": true,
+  "symbol": "OANDA:EURJPY",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "allow_symbol_change": true,
+  "save_image": false,
+  "calendar": false,
+  "studies": [
+    "STD;MA%Ribbon"
+  ],
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container" style="height:100%;width:100%">
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "autosize": true,
   "symbol": "OANDA:AUDJPY",
-  "interval": "5",
+  "interval": "1",
   "timezone": "Etc/UTC",
   "theme": "dark",
   "style": "1",
-  "locale": "ja",
-  "enable_publishing": false,
-  "hide_top_toolbar": true,
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "allow_symbol_change": true,
   "save_image": false,
+  "calendar": false,
   "studies": [
-    "STD;EMA"
+    "STD;MA%Ribbon"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -123,24 +191,29 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
-<!-- TradingView Widget BEGIN -->
+
+
+
+
+    <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" style="height:100%;width:100%">
-  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:48%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://jp.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">TradingViewですべてのマーケットを追跡</span></a></div>
+  <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "autosize": true,
-  "symbol": "OANDA:NZDJPY",
-  "interval": "5",
+  "symbol": "OANDA:USDJPY",
+  "interval": "1",
   "timezone": "Etc/UTC",
   "theme": "dark",
   "style": "1",
-  "locale": "ja",
-  "enable_publishing": false,
-  "hide_top_toolbar": true,
+  "locale": "en",
+  "gridColor": "rgba(101, 101, 101, 0.06)",
+  "allow_symbol_change": true,
   "save_image": false,
+  "calendar": false,
   "studies": [
-    "STD;EMA"
+    "STD;MA%Ribbon"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -148,6 +221,8 @@
   </script>
 </div>
 <!-- TradingView Widget END -->
+
+    
   </div>
 </div>
 
