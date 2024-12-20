@@ -1,254 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2列のレイアウト</title>
+<title>4つのTradingViewウィジェットを横並びにする</title>
 <style>
-
-  :root {
-    --header-height: 300px;
-  }
-
-  
+  /* 親コンテナのスタイル */
   .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 2つの列を1:1の比率で指定 */
-  }
-  .left-column {
-    background-color: #f0f0f0;
-  }
-  .right-column {
-    background-color: #e0e0e0;
+    display: flex; /* 横並びにする */
+    justify-content: space-between; /* 子要素の間にスペースを入れる */
+    gap: 10px; /* 各ウィジェットの間隔 */
   }
 
+  /* 子要素(ウィジェット)のスタイル */
+  .widget-container {
+    width: 24%; /* 4つ並べるので、100% / 4 = 25% だが、隙間を考慮して24%に */
+    aspect-ratio: 1 / 1; /* 縦横比を1:1に保つ */
+    background-color: #f0f0f0; /* ウィジェットが見やすいように色をつける */
+    position: relative;
+  }
 
-  
+  .tradingview-widget-container {
+    width: 100%;
+    height: 100%;
+  }
 
-  
-  /* レスポンシブデザイン */
-  @media only screen and (max-width: 600px) {
-    .container {
-      grid-template-columns: 1fr; /* 1列にする */
-    }
+  .tradingview-widget-container__widget {
+    width: 100%;
+    height: 100%;
   }
 </style>
 </head>
 <body>
 
+<h1>4つのTradingViewウィジェットを横並びに表示</h1>
+
 <div class="container">
-  <div class="column left-column">
-    
-    
-    <!-- 長いテキストを追加してスクロールを確認 文字を入れたいならこれか<p> </p> <h2>left title</h2>　-->
-    
-
-
-
-  
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "300",
-  "height": "150",
-  "symbol": "OANDA:EURAUD",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "300",
-  "height": "150",
-  "symbol": "OANDA:EURUSD",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "300",
-  "height": "150",
-  "symbol": "OANDA:AUDUSD",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-
-
-    
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "300",
-  "height": "150",
-  "symbol": "OANDA:EURJPY",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "300",
-  "height": "150",
-  "symbol": "OANDA:AUDJPY",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-
-
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "300",
-  "height": "150",
-  "symbol": "OANDA:USDJPY",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "1",
-  "locale": "en",
-  "gridColor": "rgba(101, 101, 101, 0.06)",
-  "hide_top_toolbar": true,
-  "hide_legend": true,
-  "allow_symbol_change": false,
-  "save_image": false,
-  "calendar": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-    
+  <!-- ウィジェット1 -->
+  <div class="widget-container">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:EURUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en"
+      }
+      </script>
+    </div>
   </div>
-  <div class="column right-column">
-    <p>EJ AJ UJ</p>
 
-    
-
-
-    
+  <!-- ウィジェット2 -->
+  <div class="widget-container">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:GBPUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en"
+      }
+      </script>
+    </div>
   </div>
+
+  <!-- ウィジェット3 -->
+  <div class="widget-container">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:USDJPY",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en"
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ウィジェット4 -->
+  <div class="widget-container">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:AUDUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en"
+      }
+      </script>
+    </div>
+  </div>
+
 </div>
 
 </body>
