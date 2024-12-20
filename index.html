@@ -3,41 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>4つのTradingViewウィジェットを横並びにする</title>
+<title>4つのウィジェットにテキストを追加</title>
 <style>
   /* 親コンテナのスタイル */
   .container {
     display: flex; /* 横並びにする */
-    justify-content: space-between; /* 子要素の間にスペースを入れる */
-    gap: 10px; /* 各ウィジェットの間隔 */
+    justify-content: space-between; 
+    gap: 10px; 
   }
 
   /* 子要素(ウィジェット)のスタイル */
   .widget-container {
-    width: 24%; /* 4つ並べるので、100% / 4 = 25% だが、隙間を考慮して24%に */
-    aspect-ratio: 1 / 1; /* 縦横比を1:1に保つ */
-    background-color: #f0f0f0; /* ウィジェットが見やすいように色をつける */
-    position: relative;
+    width: 24%; 
+    aspect-ratio: 1 / 1; 
+    position: relative; /* 親コンテナの位置を基準にする */
+    background-color: #f0f0f0; 
   }
 
+  /* カスタムテキストのスタイル */
+  .custom-label {
+    position: absolute;
+    top: 10px; /* 上から10px */
+    left: 10px; /* 左から10px */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明の黒背景 */
+    padding: 5px 10px; /* 文字の周りの余白 */
+    border-radius: 5px; /* 角を丸くする */
+    z-index: 10; /* 他の要素より前面に表示 */
+  }
+
+  /* ウィジェットのスタイル */
   .tradingview-widget-container {
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    height: 100%; 
   }
 
   .tradingview-widget-container__widget {
-    width: 100%;
-    height: 100%;
+    width: 100%; 
+    height: 100%; 
   }
 </style>
 </head>
 <body>
 
-<h1>4つのTradingViewウィジェットを横並びに表示</h1>
+<h1>ウィジェットの左上にテキストを表示</h1>
 
 <div class="container">
   <!-- ウィジェット1 -->
   <div class="widget-container">
+    <div class="custom-label">EURUSD</div> <!-- カスタムテキスト -->
     <div class="tradingview-widget-container">
       <div class="tradingview-widget-container__widget"></div>
       <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -47,7 +63,9 @@
         "interval": "1",
         "theme": "light",
         "style": "1",
-        "locale": "en"
+        "locale": "en",
+        "hide_top_toolbar": true, /* トップバーを非表示にする */
+        "hide_legend": true /* 通貨ペア名を非表示にする */
       }
       </script>
     </div>
@@ -55,6 +73,7 @@
 
   <!-- ウィジェット2 -->
   <div class="widget-container">
+    <div class="custom-label">GBPUSD</div> <!-- カスタムテキスト -->
     <div class="tradingview-widget-container">
       <div class="tradingview-widget-container__widget"></div>
       <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -64,7 +83,9 @@
         "interval": "1",
         "theme": "light",
         "style": "1",
-        "locale": "en"
+        "locale": "en",
+        "hide_top_toolbar": true, 
+        "hide_legend": true 
       }
       </script>
     </div>
@@ -72,6 +93,7 @@
 
   <!-- ウィジェット3 -->
   <div class="widget-container">
+    <div class="custom-label">USDJPY</div> <!-- カスタムテキスト -->
     <div class="tradingview-widget-container">
       <div class="tradingview-widget-container__widget"></div>
       <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -81,7 +103,9 @@
         "interval": "1",
         "theme": "light",
         "style": "1",
-        "locale": "en"
+        "locale": "en",
+        "hide_top_toolbar": true, 
+        "hide_legend": true 
       }
       </script>
     </div>
@@ -89,6 +113,7 @@
 
   <!-- ウィジェット4 -->
   <div class="widget-container">
+    <div class="custom-label">AUDUSD</div> <!-- カスタムテキスト -->
     <div class="tradingview-widget-container">
       <div class="tradingview-widget-container__widget"></div>
       <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -98,7 +123,9 @@
         "interval": "1",
         "theme": "light",
         "style": "1",
-        "locale": "en"
+        "locale": "en",
+        "hide_top_toolbar": true, 
+        "hide_legend": true 
       }
       </script>
     </div>
