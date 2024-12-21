@@ -1,4 +1,118 @@
-<!-- ウィジェット4 -->
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>4x2のウィジェット配置</title>
+<style>
+  /* 親コンテナのスタイル */
+  .container {
+    display: flex;          /* 子要素を並べる */
+    flex-wrap: wrap;        /* 幅を超えたら折り返す */
+    justify-content: space-between; 
+    gap: 10px;              /* 各ウィジェットの間隔 */
+  }
+
+  /* 子要素(ウィジェット)のスタイル */
+  .widget-container {
+    width: 24%;             /* 横幅を4等分 */
+    aspect-ratio: 1 / 1;    /* 正方形にする */
+    position: relative;     /* テキストの位置調整のため */
+    background-color: #f0f0f0; 
+  }
+
+  /* カスタムテキストのスタイル */
+  .custom-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6); /* 半透明の黒背景 */
+    padding: 5px 10px;
+    border-radius: 5px;
+    z-index: 10; /* 前面に表示 */
+  }
+
+  /* ウィジェットのスタイル */
+  .tradingview-widget-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  .tradingview-widget-container__widget {
+    width: 100%;
+    height: 100%;
+  }
+</style>
+</head>
+<body>
+
+<h1>4x2のウィジェット配置</h1>
+
+<div class="container">
+  <!-- ウィジェット1 -->
+  <div class="widget-container">
+    <div class="custom-label">EURUSD</div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:EURUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "hide_top_toolbar": true,
+        "hide_legend": true
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ウィジェット2 -->
+  <div class="widget-container">
+    <div class="custom-label">GBPUSD</div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:GBPUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "hide_top_toolbar": true,
+        "hide_legend": true
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ウィジェット3 -->
+  <div class="widget-container">
+    <div class="custom-label">USDJPY</div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:USDJPY",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "hide_top_toolbar": true,
+        "hide_legend": true
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ウィジェット4 -->
   <div class="widget-container">
     <div class="custom-label">AUDUSD</div>
     <div class="tradingview-widget-container">
@@ -17,3 +131,90 @@
       </script>
     </div>
   </div>
+
+  <!-- 以下、5〜8つ目のウィジェットも同じ形式で追加 -->
+  <!-- ウィジェット5〜8もコピー＆編集 -->
+
+  <!-- ウィジェット4 -->
+  <div class="widget-container">
+    <div class="custom-label">AUDUSD</div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:AUDUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "hide_top_toolbar": true,
+        "hide_legend": true
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ウィジェット4 -->
+  <div class="widget-container">
+    <div class="custom-label">AUDUSD</div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:AUDUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "hide_top_toolbar": true,
+        "hide_legend": true
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ウィジェット4 -->
+  <div class="widget-container">
+    <div class="custom-label">AUDUSD</div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:AUDUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "hide_top_toolbar": true,
+        "hide_legend": true
+      }
+      </script>
+    </div>
+  </div>
+
+  <!-- ウィジェット4 -->
+  <div class="widget-container">
+    <div class="custom-label">AUDUSD</div>
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+      {
+        "autosize": true,
+        "symbol": "OANDA:AUDUSD",
+        "interval": "1",
+        "theme": "light",
+        "style": "1",
+        "locale": "en",
+        "hide_top_toolbar": true,
+        "hide_legend": true
+      }
+      </script>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
