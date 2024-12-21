@@ -5,53 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>レスポンシブ ウィジェット配置</title>
 <style>
-  /* 親コンテナのスタイル */
-  .container {
-    display: flex;
-    flex-wrap: wrap; /* 幅を超えたら折り返す */
-    gap: 10px; /* ウィジェット間の隙間 */
-    justify-content: space-between;
-  }
 
-  /* 子要素(ウィジェット)の基本スタイル */
-  .widget-container {
-    width: 24%; /* デフォルトは4列 */
-    aspect-ratio: 1 / 1; /* 正方形 */
-    position: relative;
-    background-color: #f0f0f0;
-  }
-
-  /* カスタムテキストのスタイル */
-  .custom-label {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px 10px;
-    border-radius: 5px;
-    z-index: 10;
-  }
-
-  /* ウィジェットのデフォルトスタイル（簡略化） */
-  .tradingview-widget-container {
-    width: 100%;
-    height: 100%;
-  }
-
-  /* メディアクエリ: スマホやタブレットの縦画面 */
-  @media screen and (max-width: 768px) {
-    .widget-container {
-      width: 48%; /* 2列表示 */
-    }
-  }
 </style>
 </head>
 <body>
 
-<h1>レスポンシブ ウィジェット配置</h1>
+
 
 <div class="container">
   
@@ -59,7 +18,6 @@
 <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" style="height:100%;width:100%">
   <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "autosize": true,
@@ -105,7 +63,7 @@
   <!-- TradingView Widget BEGIN -->
 <div class="tradingview-widget-container" style="height:100%;width:100%">
   <div class="tradingview-widget-container__widget" style="height:calc(100% - 32px);width:100%"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "autosize": true,
