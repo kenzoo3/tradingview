@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>My TradingView Charts</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+    }
+
+    /* チャートを縦に並べる親コンテナ */
+    .charts-container {
+      padding-left: 100px; /* ← 左余白100px */
+      display: flex;
+      flex-direction: column;
+      gap: 30px; /* チャート同士の間隔 */
+    }
+
+    /* 各チャートの箱 */
+    .chart-box {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      height: 600px; /* ← 高さ2倍くらい */
+      margin: auto;
+    }
+
+    .custom-label {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 10px;
+      font-weight: bold;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2px 6px;
+      border-radius: 5px;
+      z-index: 10;
+    }
+
+    .tradingview-widget-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .tradingview-widget-container__widget {
+      width: 100%;
+      height: calc(100% - 32px);
+    }
+
+    /* スマホ用調整 */
+    @media (max-width: 768px) {
+      .charts-container {
+        padding-left: 20px; /* スマホでは余白を少なめに */
+      }
+
+      .chart-box {
+        height: 400px; /* スマホでは少し小さく */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="charts-container">
+
+    <!-- チャート 1 -->
+    <div class="chart-box">
+      <div class="custom-label">EUR/USD</div>
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+          "autosize": true,
+          "symbol": "OANDA:EURUSD",
+          "interval": "1",
+          "theme": "dark",
+          "style": "2",
+          "locale": "en",
+          "hide_top_toolbar": true,
+          "hide_legend": true,
+          "allow_symbol_change": false,
+          "save_image": false,
+          "hide_volume": true
+        }
+        </script>
+      </div>
+    </div>
+
+    <!-- チャート 2 -->
+    <div class="chart-box">
+      <div class="custom-label">GBP/JPY</div>
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+          "autosize": true,
+          "symbol": "OANDA:GBPJPY",
+          "interval": "1",
+          "theme": "dark",
+          "style": "2",
+          "locale": "en",
+          "hide_top_toolbar": true,
+          "hide_legend": true,
+          "allow_symbol_change": false,
+          "save_image": false,
+          "hide_volume": true
+        }
+        </script>
+      </div>
+    </div>
+
+    <!-- 必要ならさらに追加可能 -->
+
+  </div>
+
+</body>
+</html>
