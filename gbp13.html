@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>GBP 1 & 15</title>
+  <title>GBP 1row</title>
   <style>
     body {
       margin: 0;
@@ -16,7 +16,7 @@
       display: flex;
       gap: 1px; /* ウィジェット間の横の余白 */
       margin-bottom: 1px; /* ウィジェット行の下の余白 */
-      padding-left: 70px;   /* 👈 左側の余白 */
+      padding-left: 216px;   /* 👈 左側の余白 */
     }
 
     .tradingview-widget-container {
@@ -41,116 +41,161 @@
 
   <!-- 1段目 -->
   <div class="row">
-    <div>
-      <div class="label">EURGBP - 1min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "388",
-          "height": "250",
-          "symbol": "OANDA:EURGBP",
-          "interval": "1",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "432",
+  "height": "333",
+  "symbol": "OANDA:GBPGBP",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "2",
+  "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.72)",
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
-    <div>
-      <div class="label">EURGBP - 15min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "500",
-          "height": "250",
-          "symbol": "OANDA:EURGBP",
-          "interval": "15",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
   </div>
 
-  <!-- 2段目以降も同じように .row を追加すればOK！ -->
+
+
+
+
+
+  <!-- 1段目 -->
+  <div class="row">
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "432",
+  "height": "333",
+  "symbol": "OANDA:GBPAUD",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "2",
+  "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.72)",
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+    
+  </div>
+
+
+
+
+
+
+
+
+  
+<!-- 1段目 -->
+  <div class="row">
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "432",
+  "height": "333",
+  "symbol": "OANDA:GBPNZD",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "2",
+  "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.72)",
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+    
+  </div>
+
+
+
 
 
 
 
 <!-- 1段目 -->
   <div class="row">
-    <div>
-      <div class="label">GBPAUD - 1min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "388",
-          "height": "250",
-          "symbol": "OANDA:GBPAUD",
-          "interval": "1",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
 
-    <div>
-      <div class="label">GBPAUD - 15min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "500",
-          "height": "250",
-          "symbol": "OANDA:GBPAUD",
-          "interval": "15",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "432",
+  "height": "333",
+  "symbol": "OANDA:GBPUSD",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "2",
+  "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.72)",
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+    
   </div>
 
 
+
+
+  
 
 
 
@@ -158,112 +203,36 @@
 
   <!-- 1段目 -->
   <div class="row">
-    <div>
-      <div class="label">GBPNZD - 1min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "388",
-          "height": "250",
-          "symbol": "OANDA:GBPNZD",
-          "interval": "1",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      <div class="label">GBPNZD - 15min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "500",
-          "height": "250",
-          "symbol": "OANDA:GBPNZD",
-          "interval": "15",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-  </div>
 
 
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "432",
+  "height": "333",
+  "symbol": "OANDA:GBPCAD",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "2",
+  "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.72)",
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
 
-
-  <!-- 1段目 -->
-  <div class="row">
-    <div>
-      <div class="label">GBPUSD - 1min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "388",
-          "height": "250",
-          "symbol": "OANDA:GBPUSD",
-          "interval": "1",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      <div class="label">GBPUSD - 15min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "500",
-          "height": "250",
-          "symbol": "OANDA:GBPUSD",
-          "interval": "15",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
+    
   </div>
 
 
@@ -271,112 +240,42 @@
 
   <!-- 1段目 -->
   <div class="row">
-    <div>
-      <div class="label">GBPCAD - 1min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "388",
-          "height": "250",
-          "symbol": "OANDA:GBPCAD",
-          "interval": "1",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
 
-    <div>
-      <div class="label">GBPCAD - 15min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "500",
-          "height": "250",
-          "symbol": "OANDA:GBPCAD",
-          "interval": "15",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
+
+
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "432",
+  "height": "333",
+  "symbol": "OANDA:GBPJPY",
+  "interval": "1",
+  "timezone": "Etc/UTC",
+  "theme": "dark",
+  "style": "2",
+  "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.72)",
+  "hide_legend": true,
+  "hide_side_toolbar": false,
+  "allow_symbol_change": false,
+  "save_image": false,
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+
+
+    
   </div>
 
 
 
-
-  <!-- 1段目 -->
-  <div class="row">
-    <div>
-      <div class="label">GBPJPY - 1min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "388",
-          "height": "250",
-          "symbol": "OANDA:GBPJPY",
-          "interval": "1",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      <div class="label">GBPJPY - 15min</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "500",
-          "height": "250",
-          "symbol": "OANDA:GBPJPY",
-          "interval": "15",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_side_toolbar": false,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-  </div>
 
 
 
