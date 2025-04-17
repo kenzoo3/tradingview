@@ -2,12 +2,12 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>My TradingView Charts</title>
+  <title>EUR M1 M15</title>
   <style>
     body {
       margin: 0;
       background-color: #000;
-      font-size: 32px;
+      font-size: 8px;
       color: #ffffff;
       padding: 20px;
     }
@@ -16,7 +16,6 @@
       display: flex;
       gap: 1px; /* ウィジェット間の横の余白 */
       margin-bottom: 1px; /* ウィジェット行の下の余白 */
-      padding-left: 30px;   /* 👈 左側の余白 */
     }
 
     .tradingview-widget-container {
@@ -35,7 +34,7 @@
   <!-- 1段目 -->
   <div class="row">
     <div>
-      <div class="label">EURGBP - 1</div>
+      <div class="label">EURGBP - 1min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -46,6 +45,7 @@
           "interval": "1",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -59,7 +59,7 @@
     </div>
 
     <div>
-      <div class="label">EURGBP - 5</div>
+      <div class="label">EURGBP - 15min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -67,9 +67,10 @@
           "width": "300",
           "height": "200",
           "symbol": "OANDA:EURGBP",
-          "interval": "5",
+          "interval": "15",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -81,35 +82,6 @@
         </script>
       </div>
     </div>
-
-    <div>
-      <div class="label">EURGBP - 30</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "200",
-          "symbol": "OANDA:EURGBP",
-          "interval": "30",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-
-    
   </div>
 
   <!-- 2段目以降も同じように .row を追加すればOK！ -->
@@ -120,7 +92,7 @@
 <!-- 1段目 -->
   <div class="row">
     <div>
-      <div class="label">EURAUD - 1</div>
+      <div class="label">EURAUD - 1min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -131,6 +103,7 @@
           "interval": "1",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -144,7 +117,7 @@
     </div>
 
     <div>
-      <div class="label">EURAUD - 5</div>
+      <div class="label">EURAUD - 15min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -152,9 +125,10 @@
           "width": "300",
           "height": "200",
           "symbol": "OANDA:EURAUD",
-          "interval": "5",
+          "interval": "15",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -166,32 +140,6 @@
         </script>
       </div>
     </div>
-
-    <div>
-      <div class="label">EURAUD - 30</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "200",
-          "symbol": "OANDA:EURAUD",
-          "interval": "30",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    
   </div>
 
 
@@ -203,7 +151,7 @@
   <!-- 1段目 -->
   <div class="row">
     <div>
-      <div class="label">EURNZD - 1</div>
+      <div class="label">EURNZD - 1min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -214,6 +162,7 @@
           "interval": "1",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -227,7 +176,7 @@
     </div>
 
     <div>
-      <div class="label">EURNZD - 5</div>
+      <div class="label">EURNZD - 15min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -235,9 +184,10 @@
           "width": "300",
           "height": "200",
           "symbol": "OANDA:EURNZD",
-          "interval": "5",
+          "interval": "15",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -249,32 +199,6 @@
         </script>
       </div>
     </div>
-
-    <div>
-      <div class="label">EURNZD - 30</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "200",
-          "symbol": "OANDA:EURNZD",
-          "interval": "30",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    
   </div>
 
 
@@ -284,7 +208,7 @@
   <!-- 1段目 -->
   <div class="row">
     <div>
-      <div class="label">EURUSD - 1</div>
+      <div class="label">EURUSD - 1min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -295,6 +219,7 @@
           "interval": "1",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -308,7 +233,7 @@
     </div>
 
     <div>
-      <div class="label">EURUSD - 5</div>
+      <div class="label">EURUSD - 15min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -316,9 +241,10 @@
           "width": "300",
           "height": "200",
           "symbol": "OANDA:EURUSD",
-          "interval": "5",
+          "interval": "15",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -330,35 +256,6 @@
         </script>
       </div>
     </div>
-
-
-    <div>
-      <div class="label">EURUSD - 30</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "200",
-          "symbol": "OANDA:EURUSD",
-          "interval": "30",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-    
   </div>
 
 
@@ -367,7 +264,7 @@
   <!-- 1段目 -->
   <div class="row">
     <div>
-      <div class="label">EURCAD - 1</div>
+      <div class="label">EURCAD - 1min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -378,6 +275,7 @@
           "interval": "1",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -391,7 +289,7 @@
     </div>
 
     <div>
-      <div class="label">EURCAD - 5</div>
+      <div class="label">EURCAD - 15min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -399,9 +297,10 @@
           "width": "300",
           "height": "200",
           "symbol": "OANDA:EURCAD",
-          "interval": "5",
+          "interval": "15",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -413,35 +312,6 @@
         </script>
       </div>
     </div>
-
-
-    <div>
-      <div class="label">EURCAD - 30</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "200",
-          "symbol": "OANDA:EURCAD",
-          "interval": "30",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-    
   </div>
 
 
@@ -450,7 +320,7 @@
   <!-- 1段目 -->
   <div class="row">
     <div>
-      <div class="label">EURJPY - 1</div>
+      <div class="label">EURJPY - 1min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -461,6 +331,7 @@
           "interval": "1",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -474,7 +345,7 @@
     </div>
 
     <div>
-      <div class="label">EURJPY - 5</div>
+      <div class="label">EURJPY - 15min</div>
       <div class="tradingview-widget-container">
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
@@ -482,9 +353,10 @@
           "width": "300",
           "height": "200",
           "symbol": "OANDA:EURJPY",
-          "interval": "5",
+          "interval": "15",
           "theme": "dark",
           "style": "2",
+          "gridColor": "rgba(56, 118, 29, 0.72)",
           "locale": "en",
           "hide_top_toolbar": true,
           "hide_legend": true,
@@ -496,37 +368,6 @@
         </script>
       </div>
     </div>
-
-
-
-    <div>
-      <div class="label">EURJPY - 30</div>
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "200",
-          "symbol": "OANDA:EURJPY",
-          "interval": "30",
-          "theme": "dark",
-          "style": "2",
-          "locale": "en",
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-
-    
   </div>
 
 
@@ -535,15 +376,6 @@
 
 
 
-
-
-<a href="https://kenzoo3.github.io/tradingview/eur.html">EUR</a>
-<a href="https://kenzoo3.github.io/tradingview/gbp.html">GBP</a>
-<a href="https://kenzoo3.github.io/tradingview/aud.html">AUD</a>
-<a href="https://kenzoo3.github.io/tradingview/nzd.html">NZD</a>
-<a href="https://kenzoo3.github.io/tradingview/usd.html">USD</a>
-<a href="https://kenzoo3.github.io/tradingview/cad.html">CAD</a>
-<a href="https://kenzoo3.github.io/tradingview/jpy.html">JPY</a>
 <a href="https://kenzoo3.github.io/tradingview/index.html">Top</a>
 
 
