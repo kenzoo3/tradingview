@@ -41,19 +41,20 @@
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "width": "760",
-  "height": "600",
-  "symbol": "OANDA:EURGBP",
+  "height": "610",
+  "symbol": "OANDA:USDJPY",
   "interval": "1",
-  "timezone": "Etc/UTC",
+  "timezone": "Europe/Helsinki",
   "theme": "dark",
-  "style": "2",
+  "style": "1",
   "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.21)",
   "hide_legend": true,
-  "hide_side_toolbar": false,
   "allow_symbol_change": true,
   "save_image": false,
   "studies": [
-    "STD;MA%Ribbon"
+    "STD;Bollinger_Bands",
+    "STD;EMA"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -76,19 +77,20 @@
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "width": "760",
-  "height": "600",
-  "symbol": "OANDA:EURAUD",
+  "height": "610",
+  "symbol": "OANDA:EURJPY",
   "interval": "1",
-  "timezone": "Etc/UTC",
+  "timezone": "Europe/Helsinki",
   "theme": "dark",
-  "style": "2",
+  "style": "1",
   "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.21)",
   "hide_legend": true,
-  "hide_side_toolbar": false,
   "allow_symbol_change": true,
   "save_image": false,
   "studies": [
-    "STD;MA%Ribbon"
+    "STD;Bollinger_Bands",
+    "STD;EMA"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -112,54 +114,20 @@
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "width": "760",
-  "height": "600",
-  "symbol": "OANDA:EURNZD",
-  "interval": "1",
-  "timezone": "Etc/UTC",
-  "theme": "dark",
-  "style": "2",
-  "locale": "en",
-  "hide_legend": true,
-  "hide_side_toolbar": false,
-  "allow_symbol_change": true,
-  "save_image": false,
-  "studies": [
-    "STD;MA%Ribbon"
-  ],
-  "hide_volume": true,
-  "support_host": "https://www.tradingview.com"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
-
-    
-  </div>
-
-
-
-  <!-- 1段目 -->
-  <div class="row">
-   <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-  {
-  "width": "760",
-  "height": "600",
+  "height": "610",
   "symbol": "OANDA:EURUSD",
   "interval": "1",
-  "timezone": "Etc/UTC",
+  "timezone": "Europe/Helsinki",
   "theme": "dark",
-  "style": "2",
+  "style": "1",
   "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.21)",
   "hide_legend": true,
-  "hide_side_toolbar": false,
   "allow_symbol_change": true,
   "save_image": false,
   "studies": [
-    "STD;MA%Ribbon"
+    "STD;Bollinger_Bands",
+    "STD;EMA"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -182,19 +150,20 @@
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "width": "760",
-  "height": "600",
-  "symbol": "OANDA:EURCAD",
+  "height": "610",
+  "symbol": "US30",
   "interval": "1",
-  "timezone": "Etc/UTC",
+  "timezone": "Europe/Helsinki",
   "theme": "dark",
-  "style": "2",
+  "style": "1",
   "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.21)",
   "hide_legend": true,
-  "hide_side_toolbar": false,
   "allow_symbol_change": true,
   "save_image": false,
   "studies": [
-    "STD;MA%Ribbon"
+    "STD;Bollinger_Bands",
+    "STD;EMA"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
@@ -217,19 +186,56 @@
   <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
   {
   "width": "760",
-  "height": "600",
-  "symbol": "OANDA:EURJPY",
+  "height": "610",
+  "symbol": "FXOPEN:NDQM",
   "interval": "1",
-  "timezone": "Etc/UTC",
+  "timezone": "Europe/Helsinki",
   "theme": "dark",
-  "style": "2",
+  "style": "1",
   "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.21)",
   "hide_legend": true,
-  "hide_side_toolbar": false,
   "allow_symbol_change": true,
   "save_image": false,
   "studies": [
-    "STD;MA%Ribbon"
+    "STD;Bollinger_Bands",
+    "STD;EMA"
+  ],
+  "hide_volume": true,
+  "support_host": "https://www.tradingview.com"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+    
+  </div>
+
+
+
+  <!-- 1段目 -->
+  <div class="row">
+   <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+  {
+  "width": "760",
+  "height": "610",
+  "symbol": "OANDA:XAUUSD",
+  "interval": "1",
+  "timezone": "Europe/Helsinki",
+  "theme": "dark",
+  "style": "1",
+  "locale": "en",
+  "gridColor": "rgba(56, 118, 29, 0.21)",
+  "hide_legend": true,
+  "allow_symbol_change": true,
+  "save_image": false,
+  "studies": [
+    "STD;Bollinger_Bands",
+    "STD;EMA"
   ],
   "hide_volume": true,
   "support_host": "https://www.tradingview.com"
