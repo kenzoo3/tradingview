@@ -16,7 +16,7 @@
       display: flex;
       gap: 1px; /* ウィジェット間の横の余白 */
       margin-bottom: 1px; /* ウィジェット行の下の余白 */
-      padding-left: 30px;   /* 👈 左側の余白 */
+      padding-left: 660px;   /* 👈 左側の余白  スマホの画面でフローティング対策として幅広げる 30px to 660px */
     }
 
     .tradingview-widget-container {
@@ -43,10 +43,10 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-          "width": "300",
-          "height": "165",
+          "width": "600",
+          "height": "380",
           "symbol": "OANDA:EURUSD",
-          "interval": "1",
+          "interval": "3",
           "theme": "dark",
           "style": "1",
           "locale": "en",
@@ -55,7 +55,7 @@
           "hide_legend": true,
           "allow_symbol_change": false,
           "save_image": false,
-          "studies": ["STD;EMA"],
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
           "hide_volume": true
         }
         </script>
@@ -70,10 +70,10 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:USDJPY",
-          "interval": "1",
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:EURUSD",
+          "interval": "15",
           "theme": "dark",
           "style": "1",
           "locale": "en",
@@ -82,7 +82,7 @@
           "hide_legend": true,
           "allow_symbol_change": false,
           "save_image": false,
-          "studies": ["STD;EMA"],
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
           "hide_volume": true
         }
         </script>
@@ -101,10 +101,10 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURJPY",
-          "interval": "1",
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:EURUSD",
+          "interval": "60",
           "theme": "dark",
           "style": "1",
           "locale": "en",
@@ -113,13 +113,38 @@
           "hide_legend": true,
           "allow_symbol_change": false,
           "save_image": false,
-          "studies": ["STD;EMA"],
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
           "hide_volume": true
         }
         </script>
       </div>
     </div>
+    
 
+    <div>
+      
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:EURUSD",
+          "interval": "240",
+          "theme": "dark",
+          "style": "1",
+          "locale": "en",
+          "hide_side_toolbar": true,
+          "hide_top_toolbar": true,
+          "hide_legend": true,
+          "allow_symbol_change": false,
+          "save_image": false,
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
+          "hide_volume": true
+        }
+        </script>
+      </div>
+    </div>
 
 
 
@@ -138,62 +163,10 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURUSD",
-          "interval": "5",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:USDJPY",
-          "interval": "5",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
+          "width": "600",
+          "height": "380",
           "symbol": "OANDA:EURJPY",
-          "interval": "5",
+          "interval": "3",
           "theme": "dark",
           "style": "1",
           "locale": "en",
@@ -202,7 +175,85 @@
           "hide_legend": true,
           "allow_symbol_change": false,
           "save_image": false,
-          "studies": ["STD;EMA"],
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
+          "hide_volume": true
+        }
+        </script>
+      </div>
+    </div>
+
+    <div>
+      
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:EURJPY",
+          "interval": "15",
+          "theme": "dark",
+          "style": "1",
+          "locale": "en",
+          "hide_side_toolbar": true,
+          "hide_top_toolbar": true,
+          "hide_legend": true,
+          "allow_symbol_change": false,
+          "save_image": false,
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
+          "hide_volume": true
+        }
+        </script>
+      </div>
+    </div>
+
+
+
+    <div>
+      
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:EURJPY",
+          "interval": "60",
+          "theme": "dark",
+          "style": "1",
+          "locale": "en",
+          "hide_side_toolbar": true,
+          "hide_top_toolbar": true,
+          "hide_legend": true,
+          "allow_symbol_change": false,
+          "save_image": false,
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
+          "hide_volume": true
+        }
+        </script>
+      </div>
+    </div>
+
+  
+     <div>
+      
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:EURJPY",
+          "interval": "240",
+          "theme": "dark",
+          "style": "1",
+          "locale": "en",
+          "hide_side_toolbar": true,
+          "hide_top_toolbar": true,
+          "hide_legend": true,
+          "allow_symbol_change": false,
+          "save_image": false,
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
           "hide_volume": true
         }
         </script>
@@ -212,6 +263,23 @@
   </div>
 
 
+
+	
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+
+
+   
 
 
 
@@ -230,10 +298,10 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURUSD",
-          "interval": "15",
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:USDJPY",
+          "interval": "3",
           "theme": "dark",
           "style": "1",
           "locale": "en",
@@ -242,7 +310,7 @@
           "hide_legend": true,
           "allow_symbol_change": false,
           "save_image": false,
-          "studies": ["STD;EMA"],
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
           "hide_volume": true
         }
         </script>
@@ -255,8 +323,8 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-          "width": "300",
-          "height": "165",
+          "width": "600",
+          "height": "380",
           "symbol": "OANDA:USDJPY",
           "interval": "15",
           "theme": "dark",
@@ -267,7 +335,7 @@
           "hide_legend": true,
           "allow_symbol_change": false,
           "save_image": false,
-          "studies": ["STD;EMA"],
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
           "hide_volume": true
         }
         </script>
@@ -280,10 +348,10 @@
         <div class="tradingview-widget-container__widget"></div>
         <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
         {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURJPY",
-          "interval": "15",
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:USDJPY",
+          "interval": "60",
           "theme": "dark",
           "style": "1",
           "locale": "en",
@@ -292,13 +360,37 @@
           "hide_legend": true,
           "allow_symbol_change": false,
           "save_image": false,
-          "studies": ["STD;EMA"],
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
           "hide_volume": true
         }
         </script>
       </div>
     </div>
-
+    
+    <div>
+      
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+        {
+          "width": "600",
+          "height": "380",
+          "symbol": "OANDA:USDJPY",
+          "interval": "240",
+          "theme": "dark",
+          "style": "1",
+          "locale": "en",
+          "hide_side_toolbar": true,
+          "hide_top_toolbar": true,
+          "hide_legend": true,
+          "allow_symbol_change": false,
+          "save_image": false,
+          "studies": ["STD;Bollinger_Bands","STD;EMA"],
+          "hide_volume": true
+        }
+        </script>
+      </div>
+    </div>
 
 
 
@@ -309,269 +401,6 @@
 
 
  
-  <!-- 1段目 -->
-  <div class="row">
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURUSD",
-          "interval": "60",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:USDJPY",
-          "interval": "60",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURJPY",
-          "interval": "60",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- 1段目 -->
-  <div class="row">
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURUSD",
-          "interval": "240",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:USDJPY",
-          "interval": "240",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURJPY",
-          "interval": "240",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-
-    
-  </div>
-
-
-
-
- 
-  <!-- 1段目 -->
-  <div class="row">
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURUSD",
-          "interval": "D",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:USDJPY",
-          "interval": "D",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-
-
-    <div>
-      
-      <div class="tradingview-widget-container">
-        <div class="tradingview-widget-container__widget"></div>
-        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
-        {
-          "width": "300",
-          "height": "165",
-          "symbol": "OANDA:EURJPY",
-          "interval": "D",
-          "theme": "dark",
-          "style": "1",
-          "locale": "en",
-          "hide_side_toolbar": true,
-          "hide_top_toolbar": true,
-          "hide_legend": true,
-          "allow_symbol_change": false,
-          "save_image": false,
-          "studies": ["STD;EMA"],
-          "hide_volume": true
-        }
-        </script>
-      </div>
-    </div>
-
-  </div>
-
-
-
-
-
 
 
 
@@ -579,7 +408,7 @@
 
 
   
-<a href="https://kenzoo3.github.io/tradingview/index.html" class="large-text">Top___ </a>
+/*      <a href="https://kenzoo3.github.io/tradingview/index.html" class="large-text">Top___ </a>      */
 
 
 
