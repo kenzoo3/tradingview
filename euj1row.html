@@ -497,6 +497,37 @@
 
 
 
+
+
+
+<!-- テキストリンクを追加 -->
+  <a href="#" id="sortLink">並べ替え</a>
+
+  <script>
+    // 並べ替え関数
+    function sortDivsById() {
+      // すべてのdiv要素を取得
+      const divs = Array.from(document.querySelectorAll('div'));
+
+      // IDでソート
+      divs.sort((a, b) => {
+        return a.id.localeCompare(b.id);
+      });
+
+      // 並べ替えた順番でHTMLに再挿入
+      const parent = document.body; // div要素を持つ親要素
+      divs.forEach(div => {
+        parent.appendChild(div);
+      });
+    }
+
+    // テキストリンクがクリックされたときに並べ替えを実行
+    document.getElementById('sortLink').addEventListener('click', (event) => {
+      event.preventDefault(); // リンククリック時にページ遷移しないように防止
+      sortDivsById();
+    });
+  </script>
+
   
   
 
