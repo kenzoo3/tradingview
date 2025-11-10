@@ -12,12 +12,25 @@
       padding: 20px;
     }
 
+
+   
+    
     .row {
       display: flex;
       gap: -20px; /* ウィジェット間の横の余白 */
       margin-bottom: 1px; /* ウィジェット行の下の余白 */
       padding-left: 30px;   /* 👈 左側の余白 */
     }
+
+　　.row .tradingview-widget-container:nth-child(2) {
+  　　margin-left: -30px;  /* 2つ目のウィジェットだけを左に10pxずらす */
+　　}
+
+    .row .tradingview-widget-container:nth-child(3) {
+  　　margin-left: -30px;  /* 2つ目のウィジェットだけを左に10pxずらす */
+　　}
+
+    
 
     .tradingview-widget-container {
       width: 300px;
