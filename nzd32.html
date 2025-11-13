@@ -43,6 +43,9 @@
 </head>
 <body>
 
+
+
+
 <canvas id="draw"></canvas>
   
   <script>
@@ -54,22 +57,28 @@
     canvas.height = window.innerHeight;
 
     let drawing = false;
+    let isCtrlPressed = false;  // Ctrlキーが押されているかどうか
 
     // 線の設定
     ctx.lineWidth = 3;
     ctx.lineCap = "round";
     ctx.strokeStyle = "#e7f702";
 
+    // 描画を開始
     function startDrawing(e) {
+      if (!isCtrlPressed) return;  // Ctrlが押されていないときは描画しない
+
       drawing = true;
       draw(e);
     }
 
+    // 描画を停止
     function stopDrawing() {
       drawing = false;
       ctx.beginPath();
     }
 
+    // 描画処理
     function draw(e) {
       if (!drawing) return;
 
@@ -93,7 +102,35 @@
     canvas.addEventListener("touchstart", (e) => startDrawing(e.touches[0]));
     canvas.addEventListener("touchend", stopDrawing);
     canvas.addEventListener("touchmove", (e) => draw(e.touches[0]));
+
+    // Ctrlキーが押されたときの処理
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Control" || e.key === "Meta") {  // "Meta"はMacのCommandキー
+        isCtrlPressed = true;
+      }
+    });
+
+    // Ctrlキーが離されたときの処理
+    window.addEventListener("keyup", (e) => {
+      if (e.key === "Control" || e.key === "Meta") {
+        isCtrlPressed = false;
+        stopDrawing();  // Ctrlキーを離したら描画を停止
+      }
+    });
+
   </script>
+
+
+
+
+
+
+
+
+
+
+
+  
 
 
 
