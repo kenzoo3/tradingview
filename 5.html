@@ -51,10 +51,43 @@
     .large-text {
       font-size: 30px;
     }
+
+
+
+    /* 左上の「一番下へ」 */
+#go-bottom {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-decoration: none;
+}
+
+/* 左下の「一番上へ」 */
+#go-top {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 8px;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  text-decoration: none;
+}
   </style>
 </head>
 <body>
   
+
+<!-- 左上：一番下へ移動 -->
+<a href="#bottom" id="go-bottom">▼ 一番下へ</a>
+
+
+
+<!-- ページ最上部のアンカー -->
+<div id="top"></div>
+
   
   
   
@@ -335,8 +368,10 @@
   <!-- 1セット 終了  -->
   
   
-  
-  
+<!-- 左下：一番上へ移動 -->
+<a href="#top" id="go-top">▲ 一番上へ</a>
+<!-- ページ最下部のアンカー -->
+<div id="bottom"></div>  
   
   
   
