@@ -13,6 +13,9 @@
       padding-left: 20px;
     }
     
+	
+	
+	
     .container {
       display: flex;
       gap: 2px;
@@ -368,6 +371,112 @@
   <!-- 1セット 終了  -->
   
   
+  
+  
+  
+  
+  
+  <!-- 1セット    M3 sym を横に３つ並べる -->
+  <div class="container">
+    
+      <div class="widget-wrapper-large">
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {
+            "width": "600",
+            "height": "466",
+            "symbol": "OANDA:EURUSD",
+            "interval": "3",
+            "theme": "dark","timezone": "Europe/Helsinki",
+            "style": "1",
+            "locale": "en",
+            "backgroundColor": "#0F0F0F",
+            "gridColor": "rgba(242, 242, 242, 0.06)",
+            "hide_side_toolbar": false,
+            "hide_top_toolbar": false,
+            "hide_legend": true,
+            "allow_symbol_change": false,
+            "save_image": false,
+            "studies": ["STD;Bollinger_Bands","STD;EMA"],
+            "hide_volume": true
+          }
+          </script>
+        </div>
+      </div>
+    
+    
+  
+      <div class="widget-wrapper-large">
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {
+            "width": "600",
+            "height": "233",
+            "symbol": "OANDA:EURJPY",
+            "interval": "3",
+            "theme": "dark","timezone": "Europe/Helsinki",
+            "style": "1",
+            "locale": "en",
+            "backgroundColor": "#0F0F0F",
+            "gridColor": "rgba(242, 242, 242, 0.06)",
+            "hide_side_toolbar": true,
+            "hide_top_toolbar": true,
+            "hide_legend": true,
+            "allow_symbol_change": false,
+            "save_image": false,
+            "studies": ["STD;Bollinger_Bands","STD;EMA"],
+            "hide_volume": true
+          }
+          </script>
+        </div>
+      </div>
+      
+      <div class="widget-wrapper-large">
+        <div class="tradingview-widget-container">
+          <div class="tradingview-widget-container__widget"></div>
+          <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-advanced-chart.js" async>
+          {
+            "width": "600",
+            "height": "233",
+            "symbol": "OANDA:USDJPY",
+            "interval": "3",
+            "theme": "dark","timezone": "Europe/Helsinki",
+            "style": "1",
+            "locale": "en",
+            "backgroundColor": "#0F0F0F",
+            "gridColor": "rgba(242, 242, 242, 0.06)",
+            "hide_side_toolbar": true,
+            "hide_top_toolbar": true,
+            "hide_legend": true,
+            "allow_symbol_change": false,
+            "save_image": false,
+            "studies": ["STD;Bollinger_Bands","STD;EMA"],
+            "hide_volume": true
+          }
+          </script>
+        </div>
+      </div>
+    
+  </div> <!--end   "container" -->
+  <!-- 1セット 終了  -->
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 <!-- 左下：一番上へ移動 -->
 <a href="#top" id="go-top">▲</a>
 <!-- ページ最下部のアンカー -->
@@ -378,4 +487,3 @@
   
 </body>
 </html>
-
